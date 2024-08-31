@@ -11,7 +11,7 @@ python eval.py \
 	--device $CUDA_DEVICE_INDEX \
 	--batch_size $EVAL_BATCH_SIZE \
 	--dataset_name $DATASET \
-	--question $QUESTION \
+	--question '$QUESTION' \
 	--max_new_tokens $MAX_NEW_TOKENS \
 	--answer_path $SAVE_DIR \
 	--eval_caption \
