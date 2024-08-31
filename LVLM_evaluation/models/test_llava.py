@@ -109,7 +109,7 @@ def load_model(model_path, model_name, dtype=torch.float16, device='cpu'):
 
 class TestLLaVA:
     def __init__(self):
-        model_path="liuhaotian/LLaVA-Lightning-MPT-7B-preview"
+        model_path="liuhaotian/llava-v1.5-7b"
         model_name = get_model_name(model_path)
         self.tokenizer, self.model, self.image_processor, self.context_len = load_model(model_path, model_name)
         self.conv = get_conv(model_name)
